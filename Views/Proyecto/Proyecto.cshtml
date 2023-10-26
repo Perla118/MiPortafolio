@@ -1,0 +1,27 @@
+﻿@model List<ProyectoModel>
+@{
+    ViewData["Title"] = "Proyecto";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var projeto in Model)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@Html.DisplayFor(modelItem=>projeto.ImagenURL)" class="card-img-top" alt="imagem projeto" />
+                    <div class="card-body">
+                        <h5 class="card-title">@Html.DisplayFor(modelItem=>projeto.Titulo)</h5>
+                        <p class="card-text">@Html.DisplayFor(modelItem=>projeto.Descripcion)</p>
+                    </div>
+                    <div class="card-footer">
+                        <a class="btn btn-primary" href="@Html.DisplayFor(modelItem=>projeto.Link)" target="_blank"
+                           rel="noopener noreferrer">Visitar</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
