@@ -2,6 +2,16 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    background-color:#BA55D3;
+}
+
+.custom-navbar {
+    background-color: #BA55D3; /* Color azul personalizado */
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size:20px;
+    z-index:100;
+    overflow:hidden;
+    width:100%;
 }
 
 #foto {
@@ -25,12 +35,9 @@
     font-size: 1.20rem;
 }
 
-#imagem-dotnet {
-    width: 400px;
-}
-
-.cabecalho {
+.fuente {
     font-weight: bold;
+    color:#BA55D3;
 }
 
 .experiencia ul {
@@ -64,3 +71,8 @@
 .credits {
     font-size: 15px;
 }
+a {
+    color: black; /* Cambia esto al color que desees */
+    text-decoration: none; /* Elimina la subrayado de los enlaces */
+}
+

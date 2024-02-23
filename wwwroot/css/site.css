@@ -18,5 +18,22 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #E6E6FA;
+}
+
+.btn-custom {
+    background-color: #BA55D3; /* Cambia esto al color que desees */
+    color: #ffffff; /* Cambia esto al color de texto deseado */
+}
+
+    /* Cambiar el color de fondo de los botones al pasar el cursor */
+    .btn-custom:hover {
+        background-color: #800080; /* Cambia esto al color de fondo deseado al pasar el cursor */
+        color: #FFF5EE; /* Cambia esto al color de texto deseado al pasar el cursor */
+    }
+
+.fuente {
+    font-weight: bold;
+    color: #BA55D3;
 }
